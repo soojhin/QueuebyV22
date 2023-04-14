@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Request">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select type of certificate you want to request" />
+
+        <RadioButton
+            android:id="@+id/rbBarangayClearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Barangay Clearance" />
+
+        <RadioButton
+            android:id="@+id/rbBusinessPermit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Business Permit" />
+
+        <RadioButton
+            android:id="@+id/rbCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cedula" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etFN"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/etround"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textCapSentences"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/etMN"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/etround"
+        android:ems="10"
+        android:hint="Middle Initial"
+        android:inputType="textCapSentences"
+        app:layout_constraintEnd_toEndOf="@+id/etFN"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etFN"
+        app:layout_constraintTop_toBottomOf="@+id/etFN" />
+
+    <EditText
+        android:id="@+id/etLN"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/etround"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textCapSentences"
+        app:layout_constraintEnd_toEndOf="@+id/etMN"
+        app:layout_constraintStart_toStartOf="@+id/etMN"
+        app:layout_constraintTop_toBottomOf="@+id/etMN" />
+
+    <EditText
+        android:id="@+id/etHouseno"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/etround"
+        android:ems="10"
+        android:hint="House No. and Street"
+        android:inputType="textCapSentences"
+        app:layout_constraintEnd_toEndOf="@+id/etLN"
+        app:layout_constraintStart_toStartOf="@+id/etLN"
+        app:layout_constraintTop_toBottomOf="@+id/etLN" />
+
+    <EditText
+        android:id="@+id/etBarangay"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/etround"
+        android:ems="10"
+        android:hint="Barangay"
+        android:inputType="textCapSentences"
+        app:layout_constraintEnd_toEndOf="@+id/etHouseno"
+        app:layout_constraintStart_toStartOf="@+id/etHouseno"
+        app:layout_constraintTop_toBottomOf="@+id/etHouseno" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/etround"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textCapSentences"
+        app:layout_constraintEnd_toEndOf="@+id/etBarangay"
+        app:layout_constraintStart_toStartOf="@+id/etBarangay"
+        app:layout_constraintTop_toBottomOf="@+id/etBarangay" />
+
+    <EditText
+        android:id="@+id/etPurpose"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/etround"
+        android:ems="10"
+        android:hint="Purpose"
+        android:inputType="textCapSentences"
+        app:layout_constraintEnd_toEndOf="@+id/etCity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etCity"
+        app:layout_constraintTop_toBottomOf="@+id/etCity" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPurpose" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

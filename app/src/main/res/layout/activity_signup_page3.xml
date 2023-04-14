@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivityPage3">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Please provide your information to us to assist you better"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="344dp"
+        android:layout_height="15dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Note: our complete name should match with the ID you are required to bring with you."
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat"
+        android:text="*Required fields"
+        android:textColor="#F24141"
+        android:textSize="9sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/etFirstname"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custombtn1"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint=" First Name*"
+        android:inputType="textPersonName"
+        android:textColorHint="#F24141"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <EditText
+        android:id="@+id/etMiddlename"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custombtn1"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint=" Middle Name"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/etFirstname"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etFirstname"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstname" />
+
+    <EditText
+        android:id="@+id/etLastname"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custombtn1"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint=" Last Name*"
+        android:inputType="textPersonName"
+        android:textColorHint="#F24141"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/etMiddlename"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etMiddlename"
+        app:layout_constraintTop_toBottomOf="@+id/etMiddlename" />
+
+    <EditText
+        android:id="@+id/etSuffix"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custombtn1"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint=" Suffix"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/etLastname"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etLastname"
+        app:layout_constraintTop_toBottomOf="@+id/etLastname" />
+
+    <EditText
+        android:id="@+id/etBirthdate"
+        android:layout_width="126dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/custombtn1"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint=" Birthdate*"
+        android:inputType="textPersonName"
+        android:textColorHint="#F24141"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/etAge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etSuffix"
+        app:layout_constraintTop_toBottomOf="@+id/etSuffix" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="126dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custombtn1"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint=" Age*"
+        android:inputType="textPersonName"
+        android:textColorHint="#F24141"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/etSuffix"
+        app:layout_constraintTop_toBottomOf="@+id/etSuffix" />
+
+    <EditText
+        android:id="@+id/etBirthplace"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custombtn1"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint=" Birthplace*"
+        android:inputType="textPersonName"
+        android:textColorHint="#F24141"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/etAge"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etBirthdate"
+        app:layout_constraintTop_toBottomOf="@+id/etAge" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Gender"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="@+id/etBirthplace"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etBirthplace"
+        app:layout_constraintTop_toBottomOf="@+id/etBirthplace" />
+
+    <RadioButton
+        android:id="@+id/rbMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Male"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662" />
+
+    <RadioButton
+        android:id="@+id/rbFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Female"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662" />
+
+    <EditText
+        android:id="@+id/etContactnumber"
+        android:layout_width="126dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custombtn1"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Contact Number*"
+        android:inputType="textPersonName"
+        android:textColorHint="#F24141"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/etBirthplace"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etBirthplace"
+        app:layout_constraintTop_toBottomOf="@+id/etBirthplace" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Address"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="@+id/etContactnumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rbMale"
+        app:layout_constraintTop_toBottomOf="@+id/rbMale" />
+
+    <EditText
+        android:id="@+id/etStreet"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:background="@drawable/custombtn1"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint=" House no. and street"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <EditText
+        android:id="@+id/etBarangay"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custombtn1"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint=" Barangay"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/etStreet"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etStreet"
+        app:layout_constraintTop_toBottomOf="@+id/etStreet" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName12"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custombtn1"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint=" City"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/etBarangay"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etBarangay"
+        app:layout_constraintTop_toBottomOf="@+id/etBarangay" />
+
+    <Button
+        android:id="@+id/asp3Nextbtn"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custombtn3"
+        android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName12"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName12"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
